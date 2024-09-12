@@ -21,6 +21,7 @@ header {
 main {
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -75,4 +76,46 @@ footer {
 .navbar i {
   display: block;
   font-size: 20px;
+}
+
+.locations {
+  background-color: #ffffff; /* Set background color */
+  padding: 3%;
+}
+
+.locations h2, h3 {
+  text-align: center;
+}
+
+.locations h2 {
+  font-size: 75px;
+}
+
+.locations h3 {
+  font-size: 30px;
+}
+
+.location-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Five columns, adjust as needed */
+  grid-gap: 20px;
+}
+
+.location-content img {
+  width: 600px;
+  height: 450px;
+}
+
+.location-container {
+  padding: 1%;
+  margin-bottom: 5%;
+  border-radius: 20px; /* Adjust the border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust the box shadow as needed */
+  overflow: hidden; /* Ensure rounded corners are applied */
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
