@@ -1,0 +1,86 @@
+body {
+    background: url(/images/blue-mosque-sultan-5373x3707-10689.jpg);
+    background-size: cover;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.heading {
+    background-color: rgba(224, 224, 224, 0.4);
+    text-align: center;
+    display: block;
+    color: rgb(255, 221, 29);
+    font-size: 50px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.content {
+    background-color: rgba(224, 224, 224, 0.4);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.data-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+    width: 100%; /* Set to 100% to take up the whole width */
+}
+
+.data-span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2%; /* Add margin between spans */
+    padding: 10px;
+    background-color: #36363694;
+    white-space: nowrap;
+    width: 500px; /* Set a fixed width for all spans */
+    border: 2px solid #36363694;
+    border-radius: 10px;
+    font-size: 35px; /* Adjust the font size as needed */
+    font-weight: 1000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* Add box shadow here */
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-evenly;
+    color: white; /* Set text color to white */
+    margin-bottom: 20px; /* Increase margin between rows */
+    height: 300px; /* Set a fixed height for the second row */
+}
+
+.datetime-container {
+    background-color: rgba(22, 92, 133, 0.8);
+    border: 1px solid rgba(22, 92, 133, 0.8); /* Add border color to rows */
+    border-radius: 10px;
+}
+
+.icon-container ion-icon {
+    font-size: 40px; /* Adjust the value to your desired size */
+  }  
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 10px 0;
+bottom: 0;
+position: absolute;
+width: 100%;
+}
+
+.footer-bottom {
+text-align: center;
+>>>>>>> e86871af171eec83c687abfd208ceb541481a78c
+}

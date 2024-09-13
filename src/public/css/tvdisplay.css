@@ -1,0 +1,21 @@
+body {
+    overflow: hidden;
+    pointer-events: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.news {
+    text-align: center;
+}
+
+.responsive-google-slides {
+margin: 0 auto; /* Center the iframe */
+}
+
+.responsive-google-slides iframe {
+border: 0;
+width: 3840px; /* Set the maximum width if needed */
+height: 2160px; /* Allow the height to adjust proportionally */
+}

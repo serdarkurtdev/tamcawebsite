@@ -1,0 +1,21 @@
+{
+    "routes": [
+      {
+        "route": "/index",
+        "redirect": "/"
+      },
+      {
+        "route": "/about",
+        "redirect": "/about.html"
+      },
+      {
+        "route": "/contact",
+        "redirect": "/contact.html"
+      },
+      {
+        "route": "/styles",
+        "redirect": "/styles.css"
+      }
+    ]
+  }
+  

@@ -1,0 +1,124 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light gray box shadow */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  position: relative;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-items a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #333;
+  transition: width 0.3s ease;
+}
+
+.nav-items a:hover::after {
+  width: 100%;
+  left: 0;
+  background: #333;
+}
+
+/* Hamburger Icon Styles */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.main {
+  height: 100vh;
+}
+
+footer {
+  background-color: #858585;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: smaller;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 100vw; /* Make the menu cover the full viewport width */
+    height: 100vh; /* Make the menu cover the full viewport height */
+    text-align: right;
+    max-height: 0; /* Initially collapsed */
+    overflow: hidden;
+    opacity: 0; /* Initially transparent */
+    transition: max-height 0.4s ease-out, opacity 0.4s ease-out; /* Smooth transition */
+    z-index: 100;
+    padding: 10%;
+  }
+  
+  .nav-items.active {
+    max-height: 100vh; /* Allow it to fully expand vertically */
+    opacity: 1;
+  }
+
+  .nav-items a::after {
+    display: none;
+  }
+  
+  .nav-items a:hover::after {
+    display: none;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  footer {
+    font-size: x-small;
+  }
+  
+}
