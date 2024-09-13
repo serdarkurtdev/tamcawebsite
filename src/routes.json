@@ -1,21 +1,20 @@
 {
-    "routes": [
-      {
-        "route": "/index",
-        "redirect": "/"
-      },
-      {
-        "route": "/about",
-        "redirect": "/about.html"
-      },
-      {
-        "route": "/contact",
-        "redirect": "/contact.html"
-      },
-      {
-        "route": "/styles",
-        "redirect": "/styles.css"
-      }
-    ]
-  }
-  
+  "routes": [
+    {
+      "route": "/",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/about",
+      "serve": "/about.html"
+    },
+    {
+      "route": "/contact",
+      "serve": "/contact.html"
+    },
+    {
+      "route": "/styles",
+      "serve": "/styles.css"
+    }
+  ]
+}
