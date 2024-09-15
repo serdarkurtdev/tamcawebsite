@@ -1,21 +1,13 @@
-section {
-  margin-bottom: 20px;
-}
-
 section h1 {
-  margin-bottom: 10px;
+  margin-top: 5%;
+  margin-bottom: 1%;
   font-size: xx-large;
-}
-
-section p {
-  margin: 0;
 }
 
 .news {
   padding: 0px 10%;
 }
 
-/* Responsive Google Slides */
 .responsive-google-slides {
   position: relative;
   padding-top: 56.5%;
@@ -33,7 +25,46 @@ section p {
   height: 100% !important;
 }
 
-/* Contact Us */
+.services-section {
+  padding: 0px 10%;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 2% 0;
+  overflow-x: auto; /* Enables horizontal scrolling on smaller screens */
+  scroll-snap-type: x mandatory; /* Smooth scrolling between service items */
+}
+
+/* Individual service container */
+.service-item {
+  flex: 0 0 23%; /* Each item takes up about 23% of the row's width */
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  scroll-snap-align: start; /* Ensures items snap neatly into view */
+}
+
+/* Background color for each service item with transparency */
+.service-item:nth-child(1) {
+  background-color: rgba(255, 216, 177, 0.5); /* Pastel orange with 80% opacity */
+}
+
+.service-item:nth-child(2) {
+  background-color: rgba(209, 245, 196, 0.5); /* Pastel green with 80% opacity */
+}
+
+.service-item:nth-child(3) {
+  background-color: rgba(204, 231, 255, 0.5); /* Pastel blue with 80% opacity */
+}
+
+.service-item:nth-child(4) {
+  background-color: rgba(224, 224, 224, 0.5); /* Pastel gray with 80% opacity */
+}
+
 .contact-us {
   background-color: #dfdfdf7c;
   padding: 0px 10%;
@@ -107,24 +138,34 @@ section p {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .news, .contact-us {
+    padding: 10px; /* Minimal padding on mobile devices */
+  }
+
+  .services-section {
+    padding: 0%;
+  }
+
+  .services-section h1 {
+    padding: 0px 10px;
+  }
+
   section h1 {
-      margin-bottom: 10px;
-      font-size: large;
+    font-size: x-large;
+  }
+  .service-item {
+    flex: 0 0 60%; /* On mobile, each item takes 80% of the width */
   }
 
-  .contact-info {
-      flex-direction: column; /* Stack items vertically on mobile */
-      align-items: center; /* Center align items */
+  .services {
+    gap: 5%; /* Reduce gap between items */
   }
 
-  .contact-left, .contact-right {
-    margin-right: 0; /* Remove margin on mobile */
-    margin-bottom: 20px; /* Space between stacked sections */
-    max-width: 100%; /* Ensure they take full width */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-}
+  .services h3 {
+    font-size: medium;
+  }
 
-  .contact-right {
-      margin-bottom: 0; /* No extra margin on the last section */
+  .contact-item p {
+    font-size: 9px;
   }
 }
