@@ -1,8 +1,3 @@
-/* Main styles */
-.main {
-  margin-top: 1%;
-}
-
 section {
   margin-bottom: 20px;
 }
@@ -55,8 +50,6 @@ section p {
   display: flex;
   justify-content: space-between; /* Aligns left and right sections */
   align-items: flex-start;
-  margin-bottom: 5%;
-  padding: 2%;
 }
 
 /* Flex items (contact sections) */
