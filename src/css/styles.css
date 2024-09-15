@@ -31,8 +31,15 @@ body {
   position: relative;
 }
 
+/* Align logo and hamburger icon vertically */
+.logo, .hamburger {
+  display: flex;
+  align-items: center; /* Ensure vertical alignment */
+}
+
 .logo img {
-  height: 50px;
+  height: 50px; /* Adjust height as needed */
+  margin-right: auto; /* Pushes the hamburger menu to the right */
 }
 
 .nav-items {
@@ -84,6 +91,9 @@ footer {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 0 10px;
+  }
   .nav-items {
     display: flex;
     flex-direction: column;
