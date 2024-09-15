@@ -14,6 +14,7 @@ section h1 {
   height: 0;
   overflow: hidden;
   border-radius: 10px;
+  pointer-events: none;
 }
 
 .responsive-google-slides iframe {
