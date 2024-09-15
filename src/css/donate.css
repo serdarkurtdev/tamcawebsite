@@ -1,0 +1,24 @@
+/* Donation Banner Styles */
+.donation-banner {
+  background-color: #4ca3af; /* Green or any color you like */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.donation-banner h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Donation Content Styles */
+.donation-content {
+  text-align: center;
+  padding: 40px 10%;
+  height: 100vh;
+}
+
+.donation-content p {
+  font-size: 1.5rem;
+  color: #333;
+}
