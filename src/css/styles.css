@@ -101,20 +101,26 @@ footer {
     top: 100%;
     left: 0;
     background-color: white;
-    width: 100vw; /* Make the menu cover the full viewport width */
-    height: 100vh; /* Make the menu cover the full viewport height */
+    width: 100vw;
+    height: 100vh;
     text-align: right;
-    max-height: 0; /* Initially collapsed */
+    max-height: 0;
     overflow: hidden;
-    opacity: 0; /* Initially transparent */
-    transition: max-height 0.4s ease-out, opacity 0.4s ease-out; /* Smooth transition */
+    opacity: 0;
+    visibility: hidden; /* Ensure it's hidden initially */
+    transition: max-height 0.4s ease-out, opacity 0.4s ease-out, visibility 0.4s ease-out;
     z-index: 100;
     padding: 10%;
   }
   
   .nav-items.active {
-    max-height: 100vh; /* Allow it to fully expand vertically */
+    max-height: 100vh;
     opacity: 1;
+    visibility: visible; /* Make visible when active */
+  }
+
+  .nav-items a {
+    pointer-events: auto; /* Enable clicks when active */
   }
 
   .nav-items a::after {
@@ -136,5 +142,4 @@ footer {
   footer {
     font-size: x-small;
   }
-  
 }
