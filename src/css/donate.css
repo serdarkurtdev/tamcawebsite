@@ -22,3 +22,13 @@
   font-size: 1.5rem;
   color: #333;
 }
+
+@media (max-width: 768px) {
+  .main p {
+      font-size: medium;
+  }
+
+  footer {
+    font-size: x-small;
+  }
+}

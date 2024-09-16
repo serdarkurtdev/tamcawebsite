@@ -1,0 +1,38 @@
+.about-banner {
+    background-color: lightskyblue; /* Green or any color you like */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .about-banner h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .about-content {
+    text-align: left;
+    padding: 40px 10%;
+    height: 100vh;
+  }
+
+  .about-content div {
+    margin-bottom: 2%;
+  }
+  
+  .about-content p {
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+
+@media (max-width: 768px) {
+    .main p {
+        font-size: medium;
+    }
+  
+    footer {
+      font-size: x-small;
+    }
+  }
+  

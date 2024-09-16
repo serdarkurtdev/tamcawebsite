@@ -16,6 +16,7 @@ body {
   background-color: #ffffff;
   padding: 10px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light gray box shadow */
+  margin-bottom: 2%;
 }
 
 .navbar {
@@ -78,7 +79,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2%;
   padding: 0px 10%;
   background-color: #f8f9fa;
   border-top: 1px solid #dee2e6;
