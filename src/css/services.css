@@ -62,7 +62,7 @@
 .service-item p {
     flex: 2;
     margin: 0;
-    text-align: center;
+    text-align: right;
 }
 
 /* Background color for each service item with transparency */
