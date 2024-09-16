@@ -12,11 +12,6 @@ body {
   flex-direction: column;
 }
 
-/* Main styles */
-.main {
-  flex: 1;
-}
-
 .header {
   background-color: #ffffff;
   padding: 10px 0;
@@ -79,6 +74,51 @@ body {
   cursor: pointer;
 }
 
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  padding: 0px 10%;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.date {
+  flex: 1;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.prayer-times {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.prayer-time {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prayer-time.active p {
+  font-weight: bold;
+}
+
+/* Main styles */
+.main {
+  flex: 1;
+}
+
 footer {
   background-color: #858585;
   color: #fff;
@@ -99,11 +139,12 @@ footer {
     flex-direction: column;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: auto; /* Adjusted to auto */
+    right: 0; /* Positioned to the right */
     background-color: white;
-    width: 100vw;
-    height: 100vh;
-    text-align: right;
+    width: 50%; /* 50% of the viewport width */
+    height: 100vh; /* Cover the entire viewport height */
+    text-align: left; /* Left-align the text */
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -137,6 +178,14 @@ footer {
 
   .hamburger {
     display: block;
+  }
+
+  .banner {
+    padding: 0px 10px;
+  }
+
+  .banner p {
+    font-size: x-small;
   }
 
   footer {
