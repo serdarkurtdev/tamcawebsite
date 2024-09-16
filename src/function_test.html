@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Info</title>
+    <script>
+        async function loadClassInfo() {
+            try {
+                // Replace with your function URL
+                const response = await fetch('https://<your-function-app-name>.azurewebsites.net/api/GetClassInfo');
+                const classes = await response.json();
+
+                // Display classes
+                const classList = document.getElementById('class-list');
+                classList.innerHTML = classes.map(c => `<li>${c.class_name} (ID: ${c.classID})</li>`).join('');
+            } catch (error) {
+                console.error('Error fetching class info:', error);
+            }
+        }
+
+        window.onload = loadClassInfo;
+    </script>
+</head>
+<body>
+    <h1>Class Information</h1>
+    <ul id="class-list"></ul>
+</body>
+</html>
