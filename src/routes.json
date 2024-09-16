@@ -2,7 +2,7 @@
   "routes": [
     {
       "route": "/",
-      "serve": "/index.html"
+      "serve": "/home.html"
     },
     {
       "route": "/about",
@@ -13,8 +13,8 @@
       "serve": "/contact.html"
     },
     {
-      "route": "/styles",
-      "serve": "/styles.css"
+      "route": "/services",
+      "serve": "/services.html"
     }
   ]
 }

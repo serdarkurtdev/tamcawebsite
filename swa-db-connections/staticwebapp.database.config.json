@@ -30,12 +30,14 @@
     }
   },
   "entities": {
-    "Person": {
+    "Class": {
       "source": "dbo.classes",
       "permissions": [
         {
-          "actions": ["*"],
-          "role": "anonymous"
+          "role": "anonymous",
+          "actions": [
+            "*"
+          ]
         }
       ]
     }

@@ -1,183 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tamca</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/db_test.css">
+    <title>Vanilla JavaScript App</title>
 </head>
+
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="/" class="logo">
-                <img src="images/tamca_transparent.png" alt="Logo" />
-            </a>
-            <!-- Hamburger Menu Icon -->
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="nav-items">
-                <a href="/">Home</a>
-                <a href="/donate">Donate</a>
-                <a href="/services">Services</a>
-                <a href="/about">About</a>
-            </div>
-        </nav>
-    </header>
-    <section class="banner">
-        <div class="banner-content">
-            <div class="date">
-                <p>Namaz Vakitleri</p>
-                <p>Prayer Times</p>
-                <p id="current-date"></p>
-            </div>
-            <div class="prayer-times">
-                <div class="prayer-time">
-                    <p>Sabah</p>
-                    <p>Fajr</p>
-                    <p id="fajr-time"></p>
-                </div>
-                <div class="prayer-time">
-                    <p>Güneş</p>
-                    <p>Sunrise</p>
-                    <p id="sunrise-time"></p>
-                </div>
-                <div class="prayer-time">
-                    <p>Öğle</p>
-                    <p>Dhuhr</p>
-                    <p id="dhuhr-time"></p>
-                </div>
-                <div class="prayer-time">
-                    <p>İkindi</p>
-                    <p>Asr</p>
-                    <p id="asr-time"></p>
-                </div>
-                <div class="prayer-time">
-                    <p>Akşam</p>
-                    <p>Maghrib</p>
-                    <p id="maghrib-time"></p>
-                </div>
-                <div class="prayer-time">
-                    <p>Yatsı</p>
-                    <p>Isha</p>
-                    <p id="isha-time"></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <main class="main">
-        <section class="news">
-            <h1>The Latest at Tamca</h1>
-            <div class="responsive-google-slides">
-              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS3QRFWsEvuUwAHst5bXb7Qm7C8_56CrrFTjZD5ijBsYVHI2SAp4vDS8_Gsp9s-mwzcrivOa2kBZ6Rm/embed?start=true&loop=true&delayms=10000&rm=minimal"></iframe>
-              </div>
-        </section>
-
-<section class="services-section">
-    <h1>Our Services</h1>
-<div class="services">
-    <div class="service-item">
-      <h3>Education</h3>
-      <p>We provide classes on the Islamic religion and Turkish culture.</p>
-    </div>
-    <div class="service-item">
-      <h3>Religion</h3>
-      <p>Join our prayers and religious events.</p>
-    </div>
-    <div class="service-item">
-      <h3>Community</h3>
-      <p>Offering support services for families and individuals.</p>
-    </div>
-    <div class="service-item">
-      <h3>Memorial</h3>
-      <p>Honoring the memories of loved ones through memorial services.</p>
-    </div>
-</div>
-</section>
-
-        <section class="contact-us">
-          <h1>Contact Us</h1>
-          <div class="contact-info">
-            <div class="contact-left">
-                <div class="contact-item">
-                    <a href="https://maps.app.goo.gl/tmzvLyJcBYH8idok9">
-                    <p><ion-icon name="location-outline"></ion-icon> TAMCA</p>
-                    </a>
-                </div>
-                <div class="contact-item">
-                    <a href="tel:+12673460615">
-                        <p><ion-icon name="call-outline"></ion-icon> +1 (267) 346-0615</p>
-                    </a>
-                </div>
-                <div class="contact-item">
-                    <a href="mailto:tamcayemre@gmail.com">
-                        <p><ion-icon name="mail-outline"></ion-icon> tamcayemre@gmail.com</p>
-                    </a>
-                </div>
-            </div>
-            <div class="contact-right">
-              <div class="contact-item">
-                  <a href="https://www.facebook.com/TAMCAYunusEmreCami/">
-                  <p><ion-icon name="logo-facebook"></ion-icon> TAMCA Yunus Emre Cami</p>
-                  </a>
-              </div>
-              <div class="contact-item">
-                  <a href="https://www.instagram.com/tamcamosque/">
-                      <p><ion-icon name="logo-instagram"></ion-icon> tamcamosque</p>
-                  </a>
-              </div>
-              <div class="contact-item">
-                  <a href="https://wa.me/12673460615">
-                      <p><ion-icon name="logo-whatsapp"></ion-icon> TAMCA</p>
-                  </a>
-              </div>
-          </div>
-        </div>
-  
-          <!-- Google Maps Embed -->
-          <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12196.249055248878!2d-74.83518!3d40.1631674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c151044709897f%3A0x590946e8bb7f1ee5!2sTAMCA%20(Diyanet%20Mosque%20of%20Levittown)!5e0!3m2!1sen!2sus!4v1726257955883!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-      </section>
+    <main>
+    <h1>Vanilla JavaScript App</h1>
+    <p>Loading content from the API: <b id="name">...</b></p>
     </main>
 
-    <footer>
-        <div class="contact-info-footer">
-            <div class="contact-item-footer">
-                <a href="tel:+12673460615">
-                    <ion-icon name="call-outline"></ion-icon>
-                </a>
-            </div>
-            <div class="contact-item-footer">
-                <a href="mailto:tamcayemre@gmail.com">
-                    <ion-icon name="mail-outline"></ion-icon>
-                </a>
-            </div>
-            <div class="contact-item-footer">
-                <a href="https://www.facebook.com/TAMCAYunusEmreCami/">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-            </div>
-            <div class="contact-item-footer">
-                <a href="https://www.instagram.com/tamcamosque/">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-            </div>
-            <div class="contact-item-footer">
-                <a href="https://wa.me/12673460615">
-                    <ion-icon name="logo-whatsapp"></ion-icon>
-                </a>
-            </div>
-        </div>
-      <p>&copy; 2024 TAMCA. All rights reserved.</p>
-  </footer>
-    <script src="js/script.js"></script>
-    <script src="js/prayertimes.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+    (async function() {
+        var url = "/data-api/rest/Class?first=3"
+        var response = await fetch(url)
+        var payload = await response.json()
+        return payload.value;
+    }());
+    </script>
 </body>
+
 </html>
