@@ -119,6 +119,39 @@ body {
   flex: 1;
 }
 
+.contact-info-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 1%;
+}
+
+.contact-item-footer {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item-footer a {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Keep text color consistent */
+}
+
+.contact-item-footer ion-icon {
+  font-size: 24px; /* Adjust icon size as needed */
+  vertical-align: middle; /* Align icons vertically */
+}
+
+.contact-item-footer p {
+  margin: 0;
+}
+
+.contact-item-footer a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+  color: inherit; /* Ensure color doesn't change on hover */
+}
+
 footer {
   background-color: #858585;
   color: #fff;
@@ -185,6 +218,10 @@ footer {
   }
 
   .banner p {
+    font-size: x-small;
+  }
+
+  .contact-info-footer {
     font-size: x-small;
   }
 

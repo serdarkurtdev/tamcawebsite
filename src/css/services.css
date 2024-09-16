@@ -1,0 +1,93 @@
+.services-section {
+    text-align: center;
+    padding: 20px 0;
+    height: 100vh;
+  }
+  
+  .services-section h1 {
+    margin: 0;
+    font-size: xx-large;
+  }
+  
+  .services-content {
+    text-align: left;
+    padding: 40px 10%;
+    height: 100vh;
+  }
+
+  .services-section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.services-section h1 {
+    margin: 0;
+    font-size: xx-large;
+}
+
+.services-content {
+    text-align: left;
+    padding: 40px 10%;
+    height: 100vh;
+}
+
+.services-section {
+    padding: 0px 10%;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2% 0;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-height: none; /* Remove height restriction */
+}
+
+.service-item h3 {
+    flex: 1;
+    text-align: left;
+    margin: 0;
+}
+
+.service-item p {
+    flex: 2;
+    margin: 0;
+    text-align: center;
+}
+
+/* Background color for each service item with transparency */
+.service-item:nth-child(1) {
+    background-color: rgba(255, 216, 177, 0.5); /* Pastel orange with 80% opacity */
+}
+
+.service-item:nth-child(2) {
+    background-color: rgba(209, 245, 196, 0.5); /* Pastel green with 80% opacity */
+}
+
+.service-item:nth-child(3) {
+    background-color: rgba(204, 231, 255, 0.5); /* Pastel blue with 80% opacity */
+}
+
+.service-item:nth-child(4) {
+    background-color: rgba(224, 224, 224, 0.5); /* Pastel gray with 80% opacity */
+}
+
+@media (max-width: 768px) {
+    .main p {
+        font-size: medium;
+    }
+
+    footer {
+        font-size: x-small;
+    }
+}
