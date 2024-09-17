@@ -20,7 +20,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
     z-index: 1; /* Ensure the overlay is on top of the background image */
     pointer-events: none; /* Allow clicks to pass through */
 }
@@ -84,7 +84,7 @@ body::before {
 
 .prayer-time p {
     margin: 5px 0;
-    font-size: 1em; /* Adjust font size for better fit */
+    font-size: x-large; /* Adjust font size for better fit */
     font-weight: 600; /* Adjust font weight */
 }
 
