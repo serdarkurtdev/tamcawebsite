@@ -28,10 +28,8 @@ body::before {
 #dashboard {
     display: flex;
     flex-direction: row;
-    width: 100%; /* Take up the full width of the screen */
-    max-width: 80%;
-    height: 100%; /* Take up the full height of the screen */
-    max-height: 800px;
+    width: 90%; /* Increase the width to fill more of the screen */
+    height: 90%; /* Increase the height to fill more of the screen */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     gap: 5%;
@@ -71,29 +69,56 @@ body::before {
     margin: 5px 0;
 }
 
-.prayer-time {
+.prayer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /* Increase padding to make the box taller */
+    margin: 10px 0;
+    width: 100%;
     background: linear-gradient(145deg, rgba(0, 174, 197, 0.1), rgba(255, 255, 255, 0.1)); /* Gradient background */
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-    padding: 10px; /* Adjust padding for better fit */
-    text-align: center;
-    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for 3D effect */
-    margin-bottom: 10px;
+    font-size: 1em; /* Normal font size for inactive prayers */
+    font-weight: normal; /* Normal font weight for inactive prayers */
 }
 
-.prayer-time p {
-    margin: 5px 0;
+.prayer-icon,
+.prayer-name,
+.prayer-time {
+    flex: 1; /* Each child takes up equal space */
+    text-align: center; /* Center the text within each div */
+}
+
+.prayer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prayer-icon ion-icon {
+    width: 30px; /* Fixed width for consistency */
+    height: 30px; /* Fixed height for consistency */
+}
+
+.prayer-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prayer-time {
     font-size: 1.2em; /* Adjust font size for better fit */
-    font-weight: 600; /* Adjust font weight */
+    font-weight: normal; /* Normal font weight for inactive prayers */
 }
 
-.prayer-time.active {
+.prayer-info.active {
+    font-weight: bold; /* Bold font weight for active prayer */
     background: linear-gradient(145deg, rgba(0, 174, 197, 0.6), rgba(255, 255, 255, 0.5));
-    font-weight: bold;
 }
 
-.prayer-time.recent {
+.prayer-info.recent {
     background: rgba(255, 255, 255, 0.6); /* Less transparent background */
     font-weight: bold; /* Bold font */
 }
