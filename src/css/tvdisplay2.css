@@ -84,7 +84,7 @@ body::before {
 
 .prayer-time p {
     margin: 5px 0;
-    font-size: x-large; /* Adjust font size for better fit */
+    font-size: 1.2em; /* Adjust font size for better fit */
     font-weight: 600; /* Adjust font weight */
 }
 
