@@ -74,7 +74,7 @@ body::before {
     align-items: center;
     justify-content: space-between;
     padding: 20px; /* Increase padding to make the box taller */
-    margin: 10px 0;
+    margin: 10px;
     width: 100%;
     background: linear-gradient(145deg, rgba(0, 204, 255, 0.3), rgba(26, 122, 231, 0.3));
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -91,30 +91,28 @@ body::before {
     text-align: center; /* Center the text within each div */
 }
 
-.prayer-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.prayer-icon ion-icon {
-    width: 30px; /* Fixed width for consistency */
-    height: 30px; /* Fixed height for consistency */
+.prayer-icon i {
+    font-size: 1.5em; /* Adjust the size of the icon */
+    color: currentColor;
 }
 
 .prayer-name {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: 300;
 }
 
 .prayer-time {
     font-size: 1.2em; /* Adjust font size for better fit */
-    font-weight: normal; /* Normal font weight for inactive prayers */
+    font-weight: 300; /* Normal font weight for inactive prayers */
+}
+
+.prayer-info.active .prayer-name, .prayer-info.active .prayer-time {
+    font-weight: 600; /* Bold font weight for active prayer time */
 }
 
 .prayer-info.active {
-    font-weight: bold; /* Bold font weight for active prayer */
     background: linear-gradient(145deg, rgba(0, 204, 255, 0.9), rgba(26, 122, 231, 0.9));
     box-shadow: 0 0 10px rgba(0, 204, 255, 0.5), 0 0 15px rgba(26, 122, 231, 0.5); /* Reduced box shadow */
 }
@@ -122,4 +120,34 @@ body::before {
 .prayer-info.recent {
     background: rgba(255, 255, 255, 0.6); /* Less transparent background */
     font-weight: bold; /* Bold font */
+}
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+    #dashboard {
+        display: block;
+        flex-direction: column;
+        width: 100%; /* Increase the width to fill more of the screen */
+        height: 100vh; /* Fit the height to the viewport */
+        overflow-y: auto; /* Make the content scrollable */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        gap: 5%;
+        z-index: 2; /* Ensure the dashboard is above the overlay */
+    }
+
+    .heading {
+        margin-bottom: 20px;
+        font-size: large;
+    }
+
+    .date-time {
+        font-size: medium;
+        margin-bottom: 10px;
+    }
+
+.prayer-info, .prayer-time{
+    font-size: medium;
+    margin-left: 0;
+}
 }
