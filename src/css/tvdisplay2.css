@@ -12,6 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden; /* Prevent overflow */
+    background-color: rgba(143, 143, 143, 0.4);
 }
 
 #dashboard {
