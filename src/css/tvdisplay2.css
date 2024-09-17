@@ -1,9 +1,8 @@
 body {
     background: url(/images/blue-mosque-sultan-5373x3707-10689.jpg);
-    background-size: cover;
+    background-color: rgba(95, 95, 95, 0.7);
     pointer-events: none;
     font-family: 'Poppins', sans-serif;
-    background-color: #858585;
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden; /* Prevent overflow */
-    background-color: rgba(143, 143, 143, 0.4);
 }
 
 #dashboard {

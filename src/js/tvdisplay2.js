@@ -12,15 +12,23 @@ document.addEventListener("DOMContentLoaded", function () {
         const data = await response.json();
         prayerTimings = data.data.timings;
 
-        document.getElementById('fajr-time').innerText = prayerTimings.Fajr;
-        document.getElementById('sunrise-time').innerText = prayerTimings.Sunrise;
-        document.getElementById('dhuhr-time').innerText = prayerTimings.Dhuhr;
-        document.getElementById('asr-time').innerText = prayerTimings.Asr;
-        document.getElementById('maghrib-time').innerText = prayerTimings.Maghrib;
-        document.getElementById('isha-time').innerText = prayerTimings.Isha;
+        document.getElementById('fajr-time').innerText = convertTo12HourFormat(prayerTimings.Fajr);
+        document.getElementById('sunrise-time').innerText = convertTo12HourFormat(prayerTimings.Sunrise);
+        document.getElementById('dhuhr-time').innerText = convertTo12HourFormat(prayerTimings.Dhuhr);
+        document.getElementById('asr-time').innerText = convertTo12HourFormat(prayerTimings.Asr);
+        document.getElementById('maghrib-time').innerText = convertTo12HourFormat(prayerTimings.Maghrib);
+        document.getElementById('isha-time').innerText = convertTo12HourFormat(prayerTimings.Isha);
 
         highlightCurrentPrayer(prayerTimings);
         updateCountdown(prayerTimings);
+    }
+
+    // Function to convert 24-hour time to 12-hour time with AM/PM
+    function convertTo12HourFormat(time) {
+        const [hours, minutes] = time.split(':').map(Number);
+        const ampm = hours >= 12 ? 'PM' : 'AM';
+        const adjustedHours = hours % 12 || 12; // Convert 0 to 12 for 12 AM
+        return `${adjustedHours}:${minutes.toString().padStart(2, '0')} ${ampm}`;
     }
 
     // Function to highlight the most recent prayer time
@@ -58,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to update the current time and countdown to the next prayer time
     function updateCurrentTime() {
         const now = new Date();
-        document.getElementById('current-time').innerText = now.toLocaleTimeString();
+        document.getElementById('current-time').innerText = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
         updateCountdown(prayerTimings);
     }
 
