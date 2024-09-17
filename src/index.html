@@ -10,10 +10,10 @@
     <button id="delete" onclick="del()">Delete</button>
 </div>
 <script>
-async function loadClasses() {
-  var endpoint = '/data-api/rest/Class?$first=5';
+async function list() {
+  var endpoint = '/data-api/rest/Class';
   var response = await fetch(endpoint);
-  var payload = await response.json();
-  console.table(paylod.value);
+  var data = await response.json();
+  console.table(data.value);
 }
 </script>
