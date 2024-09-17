@@ -116,6 +116,7 @@ body::before {
 .prayer-info.active {
     font-weight: bold; /* Bold font weight for active prayer */
     background: linear-gradient(145deg, rgba(0, 204, 255, 0.9), rgba(26, 122, 231, 0.9));
+    box-shadow: 0 0 10px rgba(0, 204, 255, 0.5), 0 0 15px rgba(26, 122, 231, 0.5); /* Reduced box shadow */
 }
 
 .prayer-info.recent {
