@@ -145,6 +145,9 @@ body::before {
         font-size: medium;
         margin-bottom: 10px;
     }
+.right-side {
+    margin-bottom: 10%;
+}
 
 .prayer-info, .prayer-time{
     font-size: medium;
