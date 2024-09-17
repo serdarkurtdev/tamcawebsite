@@ -1,58 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prayer Times</title>
-    <style>
-        .prayer-box {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-        .prayer-icon {
-            width: 30px;
-            height: 30px;
-        }
-        .prayer-name {
-            flex-grow: 1;
-            text-align: center;
-        }
-        .prayer-time {
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Vanilla JavaScript App</title>
 </head>
+
 <body>
-    <div class="prayer-box">
-        <img src="path/to/icon1.png" alt="Fajr Icon" class="prayer-icon">
-        <div class="prayer-name">Fajr</div>
-        <div class="prayer-time">05:00 AM</div>
-    </div>
-    <div class="prayer-box">
-        <img src="path/to/icon2.png" alt="Dhuhr Icon" class="prayer-icon">
-        <div class="prayer-name">Dhuhr</div>
-        <div class="prayer-time">01:00 PM</div>
-    </div>
-    <div class="prayer-box">
-        <img src="path/to/icon3.png" alt="Asr Icon" class="prayer-icon">
-        <div class="prayer-name">Asr</div>
-        <div class="prayer-time">04:30 PM</div>
-    </div>
-    <div class="prayer-box">
-        <img src="path/to/icon4.png" alt="Maghrib Icon" class="prayer-icon">
-        <div class="prayer-name">Maghrib</div>
-        <div class="prayer-time">07:00 PM</div>
-    </div>
-    <div class="prayer-box">
-        <img src="path/to/icon5.png" alt="Isha Icon" class="prayer-icon">
-        <div class="prayer-name">Isha</div>
-        <div class="prayer-time">08:30 PM</div>
-    </div>
+    <main>
+    <h1>Vanilla JavaScript App</h1>
+    <p>Loading content from the API: <b id="name">...</b></p>
+    </main>
+
+    <script>
+    (async function() {
+        const { text } = await( await fetch(`/api/message`)).json();
+        document.querySelector('#name').textContent = text;
+    }());
+    </script>
 </body>
+
 </html>
