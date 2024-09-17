@@ -76,11 +76,11 @@ body::before {
     padding: 20px; /* Increase padding to make the box taller */
     margin: 10px 0;
     width: 100%;
-    background: linear-gradient(145deg, rgba(0, 174, 197, 0.1), rgba(255, 255, 255, 0.1)); /* Gradient background */
+    background: linear-gradient(145deg, rgba(0, 204, 255, 0.3), rgba(26, 122, 231, 0.3));
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for 3D effect */
-    font-size: 1em; /* Normal font size for inactive prayers */
+    font-size: 1.2em; /* Normal font size for inactive prayers */
     font-weight: normal; /* Normal font weight for inactive prayers */
 }
 
@@ -115,7 +115,7 @@ body::before {
 
 .prayer-info.active {
     font-weight: bold; /* Bold font weight for active prayer */
-    background: linear-gradient(145deg, rgba(0, 174, 197, 0.6), rgba(255, 255, 255, 0.5));
+    background: linear-gradient(145deg, rgba(0, 204, 255, 0.9), rgba(26, 122, 231, 0.9));
 }
 
 .prayer-info.recent {
