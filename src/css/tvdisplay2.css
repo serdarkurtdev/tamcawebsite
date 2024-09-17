@@ -1,85 +1,87 @@
 body {
     background: url(/images/blue-mosque-sultan-5373x3707-10689.jpg);
     background-size: cover;
-    overflow: hidden;
     pointer-events: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #858585;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent overflow */
 }
 
-body::-webkit-scrollbar {
-    display: none;
+#dashboard {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Take up the full width of the screen */
+    max-width: 80%;
+    height: 100%; /* Take up the full height of the screen */
+    max-height: 800px;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    gap: 5%;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    font-size: x-large;
+    justify-content: center;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
 }
 
 .heading {
-    background-color: rgba(224, 224, 224, 0.4);
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+.date-time {
+    margin-bottom: 20px;
+}
+
+.date-time p {
+    margin: 5px 0;
+}
+
+.prayer-time {
+    background: linear-gradient(145deg, rgba(0, 174, 197, 0.1), rgba(255, 255, 255, 0.1)); /* Gradient background */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px; /* Adjust padding for better fit */
     text-align: center;
-    display: block;
-    color: rgb(255, 221, 29);
-    font-size: 50px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for 3D effect */
+    margin-bottom: 10px;
 }
 
-.content {
-    background-color: rgba(224, 224, 224, 0.4);
-    display: flex;
-    justify-content: center;
-    height: 100vh;
+.prayer-time p {
+    margin: 5px 0;
+    font-size: 1em; /* Adjust font size for better fit */
+    font-weight: 600; /* Adjust font weight */
 }
 
-.data-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 20px;
-    width: 100%; /* Set to 100% to take up the whole width */
+.prayer-time.active {
+    background: linear-gradient(145deg, rgba(0, 174, 197, 0.6), rgba(255, 255, 255, 0.5));
+    font-weight: bold;
 }
 
-.data-span {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 2%; /* Add margin between spans */
-    padding: 10px;
-    background-color: #36363694;
-    white-space: nowrap;
-    width: 500px; /* Set a fixed width for all spans */
-    border: 2px solid #36363694;
-    border-radius: 10px;
-    font-size: 35px; /* Adjust the font size as needed */
-    font-weight: 1000;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* Add box shadow here */
-}
-
-.data-row {
-    display: flex;
-    justify-content: space-evenly;
-    color: white; /* Set text color to white */
-    margin-bottom: 20px; /* Increase margin between rows */
-    height: 300px; /* Set a fixed height for the second row */
-}
-
-.datetime-container {
-    background-color: rgba(22, 92, 133, 0.8);
-    border: 1px solid rgba(22, 92, 133, 0.8); /* Add border color to rows */
-    border-radius: 10px;
-}
-
-.icon-container ion-icon {
-    font-size: 40px; /* Adjust the value to your desired size */
-  }  
-
-footer {
-background-color: #858585;
-color: #fff;
-padding: 10px 0;
-bottom: 0;
-position: absolute;
-width: 100%;
-}
-
-.footer-bottom {
-text-align: center;
+.prayer-time.recent {
+    background: rgba(255, 255, 255, 0.6); /* Less transparent background */
+    font-weight: bold; /* Bold font */
 }
