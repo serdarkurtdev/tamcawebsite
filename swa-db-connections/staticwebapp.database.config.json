@@ -20,7 +20,11 @@
     "host": {
       "mode": "production",
       "cors": {
-        "origins": [],
+        "origins": [
+          "http://localhost:4280",
+          "https://tamca.org",
+          "https://gray-coast-010d5091e.5.azurestaticapps.net"
+        ],
         "allow-credentials": false
       },
       "authentication": {
@@ -29,11 +33,11 @@
     }
   },
   "entities": {
-    "Class": {
-      "source": "dbo.classes",
+    "Person": {
+      "source": "dbo.MyTestPersonTable",
       "permissions": [
         {
-          "actions": ["create", "read", "update", "delete"],
+          "actions": ["*"],
           "role": "anonymous"
         }
       ]
