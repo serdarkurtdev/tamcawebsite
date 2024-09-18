@@ -30,7 +30,7 @@
     <script>
         // Fetch and list classes
         async function fetchClasses() {
-            const endpoint = '/data-api/rest/Class';
+            const endpoint = '/data-api/rest/Person';
             try {
                 const response = await fetch(endpoint);
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
