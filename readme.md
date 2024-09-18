@@ -1,3 +1,5 @@
+# TAMCA Website
+
 Building TAMCA website and db from scratch.
 
 TAMCA website backend utilizes the Azure ecosystem and is based on Static Web Apps. The website also utilizes APIs and additional functions made available through Azure and external services. See more details below regarding Static Web Apps.
