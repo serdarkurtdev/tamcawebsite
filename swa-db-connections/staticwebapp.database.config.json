@@ -20,10 +20,7 @@
     "host": {
       "mode": "production",
       "cors": {
-        "origins": [
-          "http://localhost:4280",
-          "https://gray-coast-010d5091e.5.azurestaticapps.net/"
-        ],
+        "origins": [],
         "allow-credentials": false
       },
       "authentication": {
