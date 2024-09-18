@@ -31,7 +31,6 @@ jobs:
           app_location: "/src"
           api_location: "api"
           output_location: "/src"
-          data_api_location: "swa-db-connections"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
