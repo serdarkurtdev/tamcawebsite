@@ -11,7 +11,7 @@
 </div>
 <script>
 async function list() {
-  var endpoint = '/data-api/rest/Class';
+  var endpoint = '/data-api/rest/Person';
   var response = await fetch(endpoint);
   var data = await response.json();
   console.table(data.value);
