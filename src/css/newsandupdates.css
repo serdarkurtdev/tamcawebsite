@@ -1,0 +1,112 @@
+.left-side {
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-between; /* Space the two child divs apart */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Full width */
+    padding: 0 100px; /* Adjust padding as needed */
+    font-size: 2em; /* Font size of content */
+}
+
+.heading {
+    flex: 1; /* Allow the heading to take up available space */
+    text-align: left; /* Align heading to the left */
+}
+
+.date-time {
+    flex: 1; /* Allow date-time to take up available space */
+    text-align: right; /* Align date-time to the right */
+}
+
+/* Optional: Adjust individual heading and date-time styles if needed */
+.heading h1 {
+    margin: 0; /* Remove margin for better alignment */
+    font-size: 2em; /* Adjust font size if needed */
+}
+
+.date-time p {
+    margin: 0; /* Remove margins for better alignment */
+    font-size: 1.5em; /* Adjust font size if needed */
+}
+
+/* News Section */
+.news {
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 100%; /* Full width of the screen */
+    pointer-events: none; /* Prevent interaction with the news section */
+    margin-top: 1%;
+}
+
+/* Responsive Google Slides Container */
+.responsive-google-slides {
+    width: 74%; /* Adjust width to fill more of the screen, can be 100% */
+    max-width: 3840px; /* Limit the width to 4K resolution */
+    height: 1600px; /* Fixed height, adjust as necessary */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Position container for iframe */
+}
+
+/* Style for the iframe */
+.responsive-google-slides iframe {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    border: 0; /* Remove border */
+    background-color: white; /* White background to cover black bars */
+}
+
+/* Prayer Times Container */
+.prayer-times-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    padding: 15px; /* Padding around container */
+    position: absolute; /* Absolute positioning */
+    bottom: 0; /* Align with the bottom of the screen */
+    left: 0; /* Align with the left side of the screen */
+    width: 100%; /* Full width of the screen */
+    z-index: 3; /* Higher stacking order */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Optional top border */
+}
+
+/* Prayer Info */
+.prayer-info {
+    display: flex; /* Keep the column layout */
+    flex-direction: column; /* Align content vertically within each item */
+    align-items: center; /* Center-align content */
+    justify-content: center; /* Center-align content vertically */
+    padding: 10px; /* Padding around each prayer info box */
+    margin: 5px; /* Space between prayer info boxes */
+    background: rgba(0, 204, 255, 0.3); /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for 3D effect */
+    font-size: 2.5em; /* Adjust font size */
+    width: 12%; /* Adjust width of each prayer box */
+}
+
+.prayer-icon {
+    margin-bottom: 5px; /* Space between icon and name */
+    font-size: 1.5em; /* Size of the icons */
+}
+
+.prayer-name {
+    font-weight: 400; /* Normal weight */
+    text-align: center; /* Center-align text */
+}
+
+.prayer-time {
+    font-size: 1.2em; /* Larger font size for times */
+    font-weight: 500; /* Slightly bold font weight */
+    margin-top: 5px; /* Space between name and time */
+}
+
+/* Modify for active prayer times */
+.prayer-info.active {
+    background: rgba(0, 204, 255, 0.8); /* Brighter background */
+    font-weight: 600; /* Bold font */
+    box-shadow: 0 0 10px rgba(0, 204, 255, 0.5); /* More prominent shadow */
+}
+
+.prayer-info.active .prayer-name, .prayer-info.active .prayer-time {
+    font-weight: 600; /* Bold font weight for active prayer time */
+}

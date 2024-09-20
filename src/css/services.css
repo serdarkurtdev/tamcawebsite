@@ -1,38 +1,19 @@
 .services-section {
     text-align: center;
-    padding: 20px 0;
+    padding: 0px 10%;
     height: 100vh;
   }
   
-  .services-section h1 {
-    margin: 0;
-    font-size: xx-large;
-  }
-  
-  .services-content {
-    text-align: left;
-    padding: 40px 10%;
-    height: 100vh;
-  }
-
-  .services-section {
-    text-align: center;
-    padding: 20px 0;
-}
-
 .services-section h1 {
     margin: 0;
     font-size: xx-large;
+    margin-bottom: 10%;
 }
-
+  
 .services-content {
     text-align: left;
     padding: 40px 10%;
     height: 100vh;
-}
-
-.services-section {
-    padding: 0px 10%;
 }
 
 .services {
@@ -47,7 +28,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     max-height: none; /* Remove height restriction */
@@ -85,6 +66,21 @@
 @media (max-width: 768px) {
     .main p {
         font-size: medium;
+    }
+    .services-section h1 {
+        margin: 0;
+        font-size: xx-large;
+        margin-bottom: 20%;
+    }
+    
+    .service-item {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .service-item p {
+        text-align: center;
     }
 
     footer {

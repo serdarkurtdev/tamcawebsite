@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMCA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/newsandupdates.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <script src="https://apis.google.com/js/api.js"></script>
+</head>
+<body>
+    <div id="dashboard">
+        <div class="left-side">
+            <div class="heading">
+                <h1>Hayırlı Günler Dileriz</h1>
+            </div>
+            <div class="date-time">
+                <p id="current-date"></p>
+                <p id="current-time"></p>
+            </div>
+        </div>
+
+        <div class="news">
+            <div class="responsive-google-slides">
+              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS3QRFWsEvuUwAHst5bXb7Qm7C8_56CrrFTjZD5ijBsYVHI2SAp4vDS8_Gsp9s-mwzcrivOa2kBZ6Rm/embed?start=true&loop=true&delayms=10000&rm=minimal"></iframe>
+              </div>
+        </div>
+
+        <div class="right-side">
+            <!-- New container for prayer times -->
+            <div class="prayer-times-container">
+                <div class="prayer-info">
+                    <div class="prayer-icon"><i class="bi bi-brightness-alt-low"></i></div>
+                    <div class="prayer-name"><p>Sabah</p><p>Fajr</p></div>
+                    <div class="prayer-time" id="fajr-time"></div>
+                </div>
+                <div class="prayer-info">
+                    <div class="prayer-icon"><i class="bi bi-sunrise"></i></div>
+                    <div class="prayer-name"><p>Güneş</p><p>Sunrise</p></div>
+                    <div class="prayer-time" id="sunrise-time"></div>
+                </div>
+                <div class="prayer-info">
+                    <div class="prayer-icon"><i class="bi bi-sun"></i></div>
+                    <div class="prayer-name"><p>Öğle</p><p>Dhuhr</p></div>
+                    <div class="prayer-time" id="dhuhr-time"></div>
+                </div>
+                <div class="prayer-info">
+                    <div class="prayer-icon"><i class="bi bi-brightness-alt-high"></i></div>
+                    <div class="prayer-name"><p>İkindi</p><p>Asr</p></div>
+                    <div class="prayer-time" id="asr-time"></div>
+                </div>
+                <div class="prayer-info">
+                    <div class="prayer-icon"><i class="bi bi-sunset"></i></div>
+                    <div class="prayer-name"><p>Akşam</p><p>Maghrib</p></div>
+                    <div class="prayer-time" id="maghrib-time"></div>
+                </div>
+                <div class="prayer-info">
+                    <div class="prayer-icon"><i class="bi bi-moon"></i></div>
+                    <div class="prayer-name"><p>Yatsı</p><p>Isha</p></div>
+                    <div class="prayer-time" id="isha-time"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="js/newsandupdates.js"></script>
+<script src="js/prayertimes_tvdisplay.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
