@@ -15,24 +15,23 @@
 </head>
 <body>
     <div id="dashboard">
-        <div class="left-side">
-            <div class="heading">
-                <h1>Hayırlı Günler Dileriz</h1>
-            </div>
+        <!-- Left Panel for Header -->
+        <div class="panel left-side">
             <div class="date-time">
                 <p id="current-date"></p>
                 <p id="current-time"></p>
             </div>
         </div>
 
-        <div class="news">
+        <!-- Right Panel for Google Slides -->
+        <div class="panel right-side">
             <div class="responsive-google-slides">
-              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS3QRFWsEvuUwAHst5bXb7Qm7C8_56CrrFTjZD5ijBsYVHI2SAp4vDS8_Gsp9s-mwzcrivOa2kBZ6Rm/embed?start=true&loop=true&delayms=10000&rm=minimal"></iframe>
-              </div>
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS3QRFWsEvuUwAHst5bXb7Qm7C8_56CrrFTjZD5ijBsYVHI2SAp4vDS8_Gsp9s-mwzcrivOa2kBZ6Rm/embed?start=true&loop=true&delayms=10000&rm=minimal"></iframe>
+            </div>
         </div>
 
-        <div class="right-side">
-            <!-- New container for prayer times -->
+        <!-- Bottom Panel for Prayer Times -->
+        <div class="bottom-panel">
             <div class="prayer-times-container">
                 <div class="prayer-info">
                     <div class="prayer-icon"><i class="bi bi-brightness-alt-low"></i></div>
@@ -68,9 +67,9 @@
         </div>
     </div>
     
-<script src="js/newsandupdates.js"></script>
-<script src="js/prayertimes_tvdisplay.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/newsandupdates.js"></script>
+    <script src="js/prayertimes_tvdisplay.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
