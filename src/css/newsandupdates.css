@@ -1,6 +1,5 @@
 /* General Styles */
 body {
-    margin: 20px; /* Space between body and edge of display */
     font-family: 'Poppins', sans-serif;
     background-color: #c2c2c27e;
 }
@@ -12,6 +11,7 @@ body {
     gap: 20px; /* Space between panels */
     height: 100vh; /* Full viewport height */
     box-sizing: border-box; /* Include padding and border in width and height */
+    margin: 10px;
 }
 
 /* Panel Styles */
