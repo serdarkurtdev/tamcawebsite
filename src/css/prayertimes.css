@@ -32,7 +32,6 @@ body::before {
     height: 90%; /* Increase the height to fill more of the screen */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
-    gap: 5%;
     z-index: 2; /* Ensure the dashboard is above the overlay */
 }
 
@@ -43,7 +42,7 @@ body::before {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
-    font-size: x-large;
+    font-size: large; /* Increased font size */
     justify-content: center;
 }
 
@@ -58,11 +57,12 @@ body::before {
 
 .heading {
     margin-bottom: 20px;
-    font-size: xx-large;
+    font-size: 2em; /* Increased font size */
 }
 
 .date-time {
     margin-bottom: 20px;
+    font-size: 2em;
 }
 
 .date-time p {
@@ -80,7 +80,7 @@ body::before {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for 3D effect */
-    font-size: 1.2em; /* Normal font size for inactive prayers */
+    font-size: 1.5em; /* Increased font size for inactive prayers */
     font-weight: normal; /* Normal font weight for inactive prayers */
 }
 
@@ -89,11 +89,11 @@ body::before {
 .prayer-time {
     flex: 1; /* Each child takes up equal space */
     text-align: center; /* Center the text within each div */
+    font-size: 1.5em;
 }
 
 .prayer-icon i {
-    font-size: 1.5em; /* Adjust the size of the icon */
-    color: currentColor;
+    font-size: 2em; /* Increased size of the icon */
 }
 
 .prayer-name {
@@ -104,11 +104,12 @@ body::before {
 }
 
 .prayer-time {
-    font-size: 1.2em; /* Adjust font size for better fit */
+    font-size: 2em; /* Increased font size */
     font-weight: 300; /* Normal font weight for inactive prayers */
 }
 
-.prayer-info.active .prayer-name, .prayer-info.active .prayer-time {
+.prayer-info.active .prayer-name,
+.prayer-info.active .prayer-time {
     font-weight: 600; /* Bold font weight for active prayer time */
 }
 
@@ -132,25 +133,26 @@ body::before {
         overflow-y: auto; /* Make the content scrollable */
         justify-content: center; /* Center content horizontally */
         align-items: center; /* Center content vertically */
-        gap: 5%;
+        gap: 5%; /* Adjust gap if necessary */
         z-index: 2; /* Ensure the dashboard is above the overlay */
     }
 
     .heading {
         margin-bottom: 20px;
-        font-size: large;
+        font-size: large; /* Increase font size */
     }
 
     .date-time {
-        font-size: medium;
+        font-size: medium; /* Increase font size */
         margin-bottom: 10px;
     }
-.right-side {
-    margin-bottom: 20%;
-}
 
-.prayer-info, .prayer-time{
-    font-size: medium;
-    margin-left: 0;
-}
+    .right-side {
+        margin-bottom: 20%;
+    }
+
+    .prayer-info, .prayer-time {
+        font-size: medium; /* Adjust font size */
+        margin-left: 0;
+    }
 }
