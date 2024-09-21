@@ -8,10 +8,10 @@ body {
     display: grid; /* Grid layout for main panels */
     grid-template-columns: 1fr 2fr; /* Two columns for left and right panels */
     grid-template-rows: 1fr auto; /* Two rows, with bottom panel auto height */
-    gap: 20px; /* Space between panels */
+    gap: 50px; /* Space between panels */
     height: 100vh; /* Full viewport height */
     box-sizing: border-box; /* Include padding and border in width and height */
-    margin: 10px;
+    padding: 50px;
 }
 
 /* Panel Styles */
@@ -36,7 +36,7 @@ body {
 
 .date-time p {
     font-size: 5em;
-    margin: 5px 0;
+    margin: 5px;
     font-weight: bold;
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 .responsive-google-slides {
-    width: 75vw; /* Width relative to the viewport width */
+    width: 70vw; /* Width relative to the viewport width */
     height: auto; /* Height determined by aspect ratio */
     position: relative;
     overflow: hidden;
@@ -81,7 +81,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
 }
 
 .prayer-times-container {
@@ -90,7 +89,6 @@ body {
     width: 100%; /* Full width of bottom panel */
 }
 
-/* Existing Prayer Info Styles */
 .prayer-info {
     display: flex;
     flex-direction: column;
@@ -98,7 +96,7 @@ body {
     justify-content: center;
     padding: 10px;
     margin: 5px;
-    background: rgba(0, 204, 255, 0.3);
+    background: linear-gradient(135deg, rgba(0, 204, 255, 0.3), rgba(0, 150, 255, 0.3)); /* Gradient background */
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 15%; /* Adjust width of each prayer box */
@@ -106,15 +104,19 @@ body {
     box-sizing: border-box; /* Ensure padding and border are included in the size */
 }
 
-/* Common font size for prayer info */
-.prayer-icon, .prayer-name, .prayer-time {
+.prayer-icon {
     font-size: 4em; /* Consistent font size */
     margin: 5px 0; /* Margin for spacing */
 }
 
-/* Active Prayer Info */
+/* Common font size for prayer info */
+ .prayer-name, .prayer-time {
+    font-size: 4em; /* Consistent font size */
+    margin: 5px 0; /* Margin for spacing */
+}
+
 .prayer-info.active {
-    background: rgba(0, 204, 255, 0.8);
+    background: linear-gradient(135deg, rgba(0, 204, 255, 0.8), rgba(0, 150, 255, 0.8)); /* Gradient background */
     font-weight: bold; /* Make font bold for active prayer */
-    box-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.5), 0 0 30px rgba(0, 204, 255, 0.3); /* Reduced glow effect */
 }
